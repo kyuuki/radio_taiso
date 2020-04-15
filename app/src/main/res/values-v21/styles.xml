@@ -1,0 +1,13 @@
+<resources>>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- http://y-anz-m.blogspot.com/2016/02/statusbar.html -->
+        <!-- https://www.slideshare.net/yanzm/customizing-theme-and-style-for-material-design-droid-kaigi-2016#121 -->
+        <!-- targetSdkVersion 変えたこと (多分) でステータスバーが白くなって見えにくくなってしまった -->
+        <!-- とりあえず、ステータスバー半透明にする気がないから無効化 -->
+        <!--<item name="android:windowDrawsSystemBarBackgrounds">true</item>-->
+        <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
+    </style>
+</resources>

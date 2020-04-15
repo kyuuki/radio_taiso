@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ラジオ体操カード</string>
+    <string name="action_settings">設定</string>
+    <string name="action_contact">お問い合わせ</string>
+    <string name="action_about">アプリ情報</string>
+
+    <!-- お問い合わせ -->
+    <string name="contact_email">kyuuki.japan+radio_taiso@gmail.com</string>
+    <string name="contact_subject">【ラジオ体操カード】 お問い合わせ</string>
+    <string name="contact_text">------\nアプリバージョン: %1$s\nAndroid バージョン: %2$s\n機種名: %3$s\n------\n\n</string>
+</resources>

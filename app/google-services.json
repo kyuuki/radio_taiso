@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "960215187071",
+    "firebase_url": "https://radio-taiyo.firebaseio.com",
+    "project_id": "radio-taiyo",
+    "storage_bucket": "radio-taiyo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960215187071:android:9895482a82787d21",
+        "android_client_info": {
+          "package_name": "jp.kyuuki.radio_taiyo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "960215187071-oihkabf0b2g3425s0akck9ilrlocgpes.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "jp.kyuuki.radio_taiyo",
+            "certificate_hash": "1225d84a62f14bf97b60dcac25bfe754b3990cbc"
+          }
+        },
+        {
+          "client_id": "960215187071-ahcgncvam7gp7ejmfl9453iu8j9o8n9i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGgIXQtjoFs6H1uIsi-8R4UMEoV68Ddc4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "960215187071-ahcgncvam7gp7ejmfl9453iu8j9o8n9i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
