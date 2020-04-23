@@ -40,11 +40,23 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/button_start" /> -->
+
+    <TextView
+        android:id="@+id/news_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_start"
+        android:layout_marginBottom="0dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
+
     <RelativeLayout
         android:id="@+id/calendar_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/button_start">
-    </RelativeLayout>
+        android:layout_height="wrap_content"
+        android:layout_above="@id/news_text"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp" />
 
 </RelativeLayout>

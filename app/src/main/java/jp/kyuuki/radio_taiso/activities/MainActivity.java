@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.roomorama.caldroid.CaldroidFragment;
@@ -35,6 +36,7 @@ public class MainActivity extends BaseActivity
 
     // View
     private CaldroidFragment mCaldroidFragment;
+    private TextView mNewsText;
     private Button mStartButton;
 
     static SQLiteDatabase mRecordDb;
@@ -54,6 +56,10 @@ public class MainActivity extends BaseActivity
                         .setAction("Action", null).show();
             }
         });
+
+        // ラジオ体操を始めるボタン
+        mNewsText = (TextView) findViewById(R.id.news_text);
+        mNewsText.setText("ご注意：モバイル回線にて動画を視聴する際に、キャリア各社にて通信料金が発生する場合がございます。");
 
         mCaldroidFragment = new CaldroidFragment();
         Bundle args = new Bundle();
