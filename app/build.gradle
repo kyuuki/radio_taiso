@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 35
     //buildToolsVersion '27.0.3'
     namespace 'jp.kyuuki.radio_taiso'
 
     defaultConfig {
         applicationId "jp.kyuuki.radio_taiyo"  // taiso の typo...
         minSdkVersion 14
-        targetSdkVersion 27
+        targetSdkVersion 35
         versionCode 2
         versionName "1.0.1"
     }
