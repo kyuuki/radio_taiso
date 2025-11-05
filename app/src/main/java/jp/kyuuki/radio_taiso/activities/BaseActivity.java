@@ -70,14 +70,23 @@ public abstract class BaseActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         Intent intent;
-        switch (id) {
-            case R.id.action_contact:
-                startActivityIntentContact();
-                return true;
-            case R.id.action_about:
-                intent = new Intent(this, AboutActivity.class);
-                startActivity(intent);
-                return true;
+        if (id == R.id.action_contact) {
+            startActivityIntentContact();
+            return true;
+        } else if (id == R.id.action_about) {
+            intent = new Intent(this, AboutActivity.class);
+            startActivity(intent);
+            return true;
+        }
+
+//        switch (id) {
+//            case R.id.action_contact:
+//                startActivityIntentContact();
+//                return true;
+//            case R.id.action_about:
+//                intent = new Intent(this, AboutActivity.class);
+//                startActivity(intent);
+//                return true;
 //            case R.id.action_debug:
 //                intent = new Intent(this, DebugActivity.class);
 //                startActivity(intent);
@@ -87,7 +96,7 @@ public abstract class BaseActivity extends AppCompatActivity {
 //        //noinspection SimplifiableIfStatement
 //        if (id == R.id.action_settings) {
 //            return true;
-        }
+//        }
 
         return super.onOptionsItemSelected(item);
     }

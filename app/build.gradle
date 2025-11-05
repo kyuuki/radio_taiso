@@ -2,7 +2,8 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 27
-    buildToolsVersion '27.0.3'
+    //buildToolsVersion '27.0.3'
+    namespace 'jp.kyuuki.radio_taiso'
 
     defaultConfig {
         applicationId "jp.kyuuki.radio_taiyo"  // taiso の typo...
@@ -16,6 +17,11 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+
+    // Android Gradle Plugin のバージョンアップにより、BuildConfig が作成されなくなった
+    buildFeatures {
+        buildConfig true
     }
 }
 
