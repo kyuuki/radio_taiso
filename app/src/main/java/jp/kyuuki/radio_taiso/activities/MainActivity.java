@@ -5,9 +5,9 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.widget.Toolbar;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
+import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -71,7 +71,7 @@ public class MainActivity extends BaseActivity
         //mCaldroidFragment.setBackgroundDrawableForDate(getResources().getDrawable(R.drawable.right_arrow), new Date());
         mCaldroidFragment.setCaldroidListener(new CaldroidFragmentListener());
 
-        android.support.v4.app.FragmentTransaction t = getSupportFragmentManager().beginTransaction();
+        androidx.fragment.app.FragmentTransaction t = getSupportFragmentManager().beginTransaction();
         t.replace(R.id.calendar_container, mCaldroidFragment);
         t.commit();
 
@@ -143,7 +143,7 @@ public class MainActivity extends BaseActivity
         // show で落ちる。
         // http://stackoverflow.com/questions/14262312/java-lang-illegalstateexception-can-not-perform-this-action-after-onsaveinstanc
         //dialogFragment.show(getSupportFragmentManager(), "record_confirm_dialog");
-        android.support.v4.app.FragmentTransaction t = getSupportFragmentManager().beginTransaction();
+        androidx.fragment.app.FragmentTransaction t = getSupportFragmentManager().beginTransaction();
         t.add(dialogFragment, "record_confirm_dialog");
         t.commitAllowingStateLoss();
     }
